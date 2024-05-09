@@ -1,18 +1,18 @@
 const express = require('express');
-const app = express();
 const axios = require('axios');
 const { v4 : uuidv4 } = require('uuid');
 const moment = require('moment');
 moment().format("MMMM Do YYYY, h:mm:ss a");
 const _ = require('lodash');
-// const array = require('lodash/array');
+const chalk = require('chalk');
 
+const app = express();
 const port = 3000
     app.listen(port, ()=>{
         console.log(`I'm listening at port ${port}`);
     });
 
-// axios
+// axios as suggested in Postman:
     // let config = {
     //     method: 'get',
     //     maxBodyLength: Infinity,
@@ -27,3 +27,11 @@ const port = 3000
     //   .catch((error) => {
     //     console.log(error);
     //   });
+
+    // app.get("/create", (req, res)=>{
+    //     console.log("Defining rout to CREATE");
+    //     axios.get('https://randomuser.me/api/')
+    //         .then( ({data}) =>{
+    //             console.log("data.results")
+    //         } )
+    // })
