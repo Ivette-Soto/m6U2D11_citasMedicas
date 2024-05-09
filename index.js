@@ -32,6 +32,7 @@ const port = 3000
     //     console.log("Defining rout to CREATE");
     //     axios.get('https://randomuser.me/api/')
     //         .then( ({data}) =>{
-    //             console.log("data.results")
+    //             console.log("data.results"),
+    //             res.send()
     //         } )
-    // })
+    // });
